@@ -8,3 +8,4 @@ class ColorSupplier {
         return Color.values()[Random.nextInt(Color.values().size)]
     }
 }
+

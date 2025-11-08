@@ -120,4 +120,3 @@ fun main() {
 
     figures.forEach { it.draw() }
 }
-
