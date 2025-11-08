@@ -9,6 +9,7 @@ private const val MIN_SIZE = 1.0
 private const val MAX_SIZE = 10.0
 private const val DEFAULT_RADIUS = 10.0
 private const val RANDOM_FIGURE_TYPES = 5
+private const val LAST_FIGURE_INDEX = 4
 private const val ARRAY_SIZE = 6
 private const val HALF_ARRAY = 3
 
@@ -94,7 +95,7 @@ class FigureSupplier(private val colorSupplier: ColorSupplier) {
                 color
             )
             3 -> Circle(Random.nextDouble(MIN_SIZE, MAX_SIZE), color)
-            else -> IsoscelesTrapezoid(
+            LAST_FIGURE_INDEX -> IsoscelesTrapezoid( // <--- Використовуємо константу
                 Random.nextDouble(MIN_SIZE, MAX_SIZE),
                 Random.nextDouble(MIN_SIZE, MAX_SIZE),
                 Random.nextDouble(MIN_SIZE, MAX_SIZE),
